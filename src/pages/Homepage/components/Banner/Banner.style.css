@@ -1,0 +1,130 @@
+.banner {
+  position: relative;
+  height: 60vh;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+  margin-bottom: 40px;
+}
+
+.banner:before {
+  content: "";
+  background: linear-gradient(to top, black, transparent);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 60vh;
+  width: 100%;
+}
+
+.banner-text-area {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 2rem;
+}
+
+.banner-text-area>* {
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .banner-text-area {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .banner-text-area h1 {
+    font-size: 1.5rem;
+  }
+
+  .banner-text-area p {
+    font-size: 0.9rem;
+    max-height: 6em;
+    overflow: hidden;
+  }
+}
+
+.genre-badge-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+  max-width: 300px;
+}
+
+.genre-badge {
+  white-space: nowrap;
+  padding: 0.25em 0.6em;
+  font-size: 0.75rem;
+  flex-shrink: 0;
+}
+
+.movie-slide-container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+  .banner {
+    margin-bottom: 30px;
+  }
+
+  .movie-slide-container {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 464px) {
+  .banner {
+    margin-bottom: 20px;
+  }
+
+  .movie-slide-container {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 10px;
+  }
+}
+
+.loading-spinner-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+}
+
+.banner-button-group {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+.banner-button {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.banner-button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}

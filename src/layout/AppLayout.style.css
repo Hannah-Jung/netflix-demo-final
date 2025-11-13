@@ -1,0 +1,79 @@
+.appLayout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.appLayout>main,
+.appLayout>div.outlet-wrapper {
+  flex-grow: 1;
+}
+
+.outlet-wrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-search-btn,
+.nav-signin-btn,
+.nav-signout-btn,
+.nav-search-input {
+  font-weight: 500 !important;
+}
+
+.nav-signin-btn,
+.nav-signout-btn {
+  border: 1px solid #495057 !important;
+  background-color: black !important;
+  color: darkgray !important
+}
+
+.nav-signin-btn:hover,
+.nav-signout-btn:hover {
+  color: white !important;
+  background-color: #e71b1b !important;
+}
+
+@media (max-width: 576px) {
+
+  .nav-signin-btn,
+  .nav-signout-btn {
+    margin-left: 150px !important;
+    margin-right: 150px !important;
+    margin-top: 10px;
+  }
+
+  .nav-search-btn {
+    margin-right: 0 !important;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 577px) {
+
+  .nav-signin-btn,
+  .nav-signout-btn {
+    margin-left: 150px !important;
+    margin-right: 150px !important;
+    margin-top: 10px;
+  }
+
+  .nav-search-btn {
+    margin-right: 0 !important;
+  }
+}
+
+
+@media (max-width: 500px) and (min-width: 1198px) {
+
+  .nav-signin-btn,
+  .nav-signout-btn {
+    margin-left: 150px !important;
+    margin-right: 150px !important;
+    margin-top: 10px;
+  }
+
+  .nav-search-btn {
+    margin-right: 0 !important;
+  }
+}

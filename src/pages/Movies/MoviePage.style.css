@@ -1,0 +1,67 @@
+.pagination {
+  background: transparent !important;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.page-item .page-link {
+  background-color: black !important;
+  color: white !important;
+  border: 1px solid rgba(105, 105, 105, 0.5) !important;
+  margin: 0 3px;
+  border-radius: 4px;
+}
+
+.page-item .page-link:hover,
+.page-item.active .page-link {
+  background-color: dimgray !important;
+  color: white !important;
+  border-color: lightgray !important;
+}
+
+.page-item .page-link:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.no-result-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.custom-label {
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.custom-dropdown-toggle {
+  width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: #212529 !important;
+}
+
+@media (max-width: 1024px) {
+  .custom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+@media (max-width: 464px) {
+  .custom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
