@@ -1,9 +1,32 @@
-import React from 'react'
+// import React from 'react'
+
+// const NotFoundPage = () => {
+//   return (
+//     <div>NotFoundPage</div>
+//   )
+// }
+
+// export default NotFoundPage
+
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import "./NotFoundPage.style.css";
 
 const NotFoundPage = () => {
-  return (
-    <div>NotFoundPage</div>
-  )
-}
+  const navigate = useNavigate();
 
-export default NotFoundPage
+  return (
+    <div className="notfound-container">
+      <h1 className="notfound-heading">404</h1>
+      <p className="notfound-subheading">Not Found</p>
+      <button
+        className="gohome-button"
+        onClick={() => navigate("/")}
+      >
+        Go Home
+      </button>
+    </div>
+  );
+};
+
+export default NotFoundPage;

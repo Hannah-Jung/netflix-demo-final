@@ -1,0 +1,40 @@
+.notfound-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #121212;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.notfound-heading {
+  font-size: 6rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.notfound-subheading {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+.gohome-button {
+  padding: 10px 25px;
+  font-size: 17px;
+  font-weight: 700;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gohome-button:hover {
+  background-color: #ed251f;
+  color: white;
+}
