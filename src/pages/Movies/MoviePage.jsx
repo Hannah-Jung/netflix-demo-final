@@ -27,6 +27,9 @@ const MoviePage = () => {
   const [sortOrder, setSortOrder] = useState("desc");
   const [sortField, setSortField] = useState("popularity");
 
+  const maxPages = 500;
+  const totalPages = data?.total_pages ? Math.min(data.total_pages, maxPages) : 1;
+
   useEffect(() => {
     setPage(1);
   }, [keyword]);
@@ -133,12 +136,12 @@ const MoviePage = () => {
                 ))}
               </Row>
               <ReactPaginate
-                nextLabel="Next >"
+                nextLabel=">"
                 onPageChange={handlePageClick}
-                pageRangeDisplayed={3}
-                marginPagesDisplayed={2}
-                pageCount={data?.total_pages}
-                previousLabel="< Previous"
+                pageRangeDisplayed={5}
+                marginPagesDisplayed={1}
+                pageCount={totalPages}
+                previousLabel="<"
                 pageClassName="page-item"
                 pageLinkClassName="page-link"
                 previousClassName="page-item"

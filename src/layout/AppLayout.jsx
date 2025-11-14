@@ -52,8 +52,8 @@ const AppLayout = () => {
             <Navbar.Toggle aria-controls="navbar" />
             <Navbar.Collapse id="navbar">
               <Nav className="me-auto">
-                <Nav.Link href="/">Home</Nav.Link>
-                <Nav.Link href="/movies">Movies</Nav.Link>
+                <Nav.Link href="/">HOME</Nav.Link>
+                <Nav.Link href="/movies">MOVIES</Nav.Link>
               </Nav>
               <Form className="d-flex" onSubmit={searchByKeyword}>
                 <Form.Control
@@ -74,7 +74,7 @@ const AppLayout = () => {
                     variant="outline-light"
                     onClick={handleSignInClick}
                   >
-                    Sign In
+                    SIGN IN
                   </Button>
                 ) : (
                   <Button
@@ -83,7 +83,7 @@ const AppLayout = () => {
                     variant="outline-light"
                     onClick={handleSignOut}
                   >
-                    Sign Out
+                    SIGN OUT
                   </Button>
                 )}
               </Nav>

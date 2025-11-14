@@ -31,7 +31,6 @@ const MovieDetailPage = (movieId) => {
   const posters = images.posters || [];
   const displayedPosters = posters.slice(0, 5);
 
-  console.log('credits', credits)
   const trailer = videos.find(video => video.type === "Trailer") || videos[0];
 
   const handleShowTrailer = () => {
@@ -127,7 +126,10 @@ const MovieDetailPage = (movieId) => {
   };
 
   return (
-    <Container style={{ padding: "20px", backgroundColor: "rgba(255, 255, 255, 0.075)", borderRadius: "8px" }}>
+    <Container style={{ padding: "20px", backgroundColor: "rgba(255, 255, 255, 0.075)", borderTopLeftRadius: "8px", 
+    borderTopRightRadius: "8px", 
+    borderBottomLeftRadius: 0, 
+    borderBottomRightRadius: 0  }}>
       <Row>
         <Col xs={12} md={5}>
           <div style={{ 

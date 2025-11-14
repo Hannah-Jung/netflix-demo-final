@@ -1,7 +1,8 @@
 .pagination {
   background: transparent !important;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 4rem;
+  font-weight: 600;
 }
 
 .page-item .page-link {
